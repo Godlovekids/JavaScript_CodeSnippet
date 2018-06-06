@@ -192,13 +192,13 @@ function deviceType() {
     var ua = navigator.userAgent;
     var agent = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
     var userAgent = 'true';
-    for (var i = 0 ; i < agent.length ; i++) {
+    for (var i = 0; i < agent.length; i++) {
         if (ua.indexOf(agent[i]) > 0) {
             userAgent = agent[i]
             break;
         }
-    } 
-    return userAgent;  
+    }
+    return userAgent;
 }
 deviceType();
 window.addEventListener('resize', function () {
@@ -228,8 +228,8 @@ function shallowCopy(src) {
     return dst;
 }
 
-const obj = /* ... */ 
-const copy = Object.assign({}, obj);
+const obj = /* ... */
+    const copy = Object.assign({}, obj);
 
 
 //深复制
@@ -264,9 +264,9 @@ for (var i = 0; i < arr1.length; i++) {
 
 
 setTimeout(() => {
-  let input = document.getElementById(input);
-  input.scrollIntoView(true);
-  input.scrollIntoViewIfNeeded();
+    let input = document.getElementById(input);
+    input.scrollIntoView(true);
+    input.scrollIntoViewIfNeeded();
 }, 200);
 
 
@@ -275,12 +275,12 @@ setTimeout(() => {
 
 
 var h = document.body.scrollHeight;
-  window.onresize = function() {
+window.onresize = function () {
     if (document.body.scrollHeight < h) {
-      document.getElementsByClassName("base-footer")[0].style.display =
-        "none";
+        document.getElementsByClassName("base-footer")[0].style.display =
+            "none";
     } else {
-      document.getElementsByClassName("base-footer")[0].style.display =
-        "block";
+        document.getElementsByClassName("base-footer")[0].style.display =
+            "block";
     }
 };

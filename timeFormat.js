@@ -48,4 +48,11 @@ const formatNumber = n => {
     return n[1] ? n : '0' + n
 }
 
+var calculateDate = () => {
+    var date = new Date();
+    var weeks = ["日","一","二","三","四","五","六"];
+    return date.getFullYear()+"年"+(date.getMonth()+1)+"月"+date.getDate()+"日 星期"+weeks[date.getDay()];
+}
+
+
 console.log(formatTime(new Date()));
